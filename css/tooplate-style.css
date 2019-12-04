@@ -21,7 +21,7 @@ html, body {
 }
 
 /*---------------------------------------
-  TYPOGRAPHY              
+  TYPOGRAPHY
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   font-size: 40px;
-  font-weight: 200;
+  font-weight: bold;
   line-height: 50px;
 }
 
@@ -62,8 +62,10 @@ p {
 
 
 /*---------------------------------------
-  BUTTONS               
+  BUTTONS
 -----------------------------------------*/
+
+
 
 .section-btn {
   margin: 32px 0 0 0;
@@ -88,7 +90,7 @@ p {
   font-weight: normal;
   letter-spacing: 0.5px;
   padding: 0 25px;
-  background: #4dc47d;
+  background: red;
   border-radius: 1px;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
@@ -139,12 +141,12 @@ p {
 
 .csstransforms3d .section-btn button:hover span::before,
 .csstransforms3d .section-btn button:hover span::before {
-  background: #000000;  
+  background: #000000;
 }
 
 
 /*---------------------------------------
-  GENERAL               
+  GENERAL
 -----------------------------------------*/
 
 html{
@@ -207,7 +209,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-  PRE LOADER              
+  PRE LOADER
 -----------------------------------------*/
 
 .preloader {
@@ -256,18 +258,22 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-  MENU             
+  MENU
 -----------------------------------------*/
+
+.nav-bar-book {
+  background-color: red;
+}
 
 .custom-navbar {
   margin-bottom: 0;
-  background-color: #4dc47d;
+  background-color: black;
   padding: 20px 0;
 }
 
 .custom-navbar .navbar-brand {
   color: #f9f9f9;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 25px;
 }
 
@@ -328,17 +334,17 @@ a:hover, a:active, a:focus {
 
 @media(min-width:768px) {
   .custom-navbar {
-    background: 0 0; 
+    background: 0 0;
   }
   .custom-navbar.top-nav-collapse {
-    background: #4dc47d;
+    background: black;
     padding: 15px 0;
   }
 }
 
 
 /*---------------------------------------
-  HOME             
+  HOME
 -----------------------------------------*/
 
 #home {
@@ -358,6 +364,18 @@ a:hover, a:active, a:focus {
 #home h1 {
   color: #ffffff;
   font-size: 6em;
+  line-height: 1.2em;
+}
+
+#home h2 {
+  color: #ffffff;
+  font-size: 4em;
+  line-height: 1.2em;
+}
+
+#home h3 {
+  color: #ffffff;
+  font-size: 2em;
   line-height: 1.2em;
 }
 
@@ -392,12 +410,13 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-  ABOUT              
+  ABOUT
 -----------------------------------------*/
 
 #about {
-  padding-top: 200px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #cdcdcd;
 }
 
 .about-info h3 {
@@ -409,8 +428,12 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-  PROJECT              
+  PROJECT
 -----------------------------------------*/
+
+.project-header {
+  text-align: center;
+}
 
 .project-item {
   overflow: hidden;
@@ -419,6 +442,14 @@ a:hover, a:active, a:focus {
   padding: 0;
   vertical-align: middle;
   text-align: center;
+}
+
+.project-item p {
+    color: red;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0.5px;
 }
 
 .project-overlay {
@@ -442,8 +473,9 @@ a:hover, a:active, a:focus {
 .project-item img {
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
+
 }
-.project-item:hover img {
+/* .project-item:hover img {
   transform: scale(1.1);
 }
 
@@ -460,11 +492,11 @@ a:hover, a:active, a:focus {
 
 .project-item:hover .project-overlay {
   opacity: 1;
-}
+} */
 
 
 /*---------------------------------------
-   TEAM             
+   TEAM
 -----------------------------------------*/
 
 #team .item {
@@ -526,7 +558,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-  CONTACT             
+  CONTACT
 -----------------------------------------*/
 
 #contact {
@@ -577,7 +609,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-  FOOTER              
+  FOOTER
 -----------------------------------------*/
 
 footer {
@@ -599,14 +631,14 @@ footer .copyright-text {
 
 
 /*---------------------------------------
-  SOCIAL ICON             
+  SOCIAL ICON
 -----------------------------------------*/
 
 .social-icon {
   position: relative;
   padding: 0;
   margin: 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .social-icon li {
@@ -634,7 +666,7 @@ footer .copyright-text {
 
 
 /*---------------------------------------
-  MOBILE RESPONSIVE              
+  MOBILE RESPONSIVE
 -----------------------------------------*/
 
 @media (max-width: 992px) {
