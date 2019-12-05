@@ -449,6 +449,8 @@ a:hover, a:active, a:focus {
   text-align: center;
 }
 
+
+
 .project-item {
   background-color: #C0C0C0;
   margin-top: 50px;
@@ -552,6 +554,8 @@ a:hover, a:active, a:focus {
   position: relative;
   margin-top: 20px;
   margin-bottom: 16px;
+  background-color: #C0C0C0;
+  border: 4px solid #5D6063;
 }
 
 .team-item img {
@@ -591,6 +595,34 @@ a:hover, a:active, a:focus {
 
 .team-item:hover .team-overlay {
   opacity: 1;
+}
+
+*---------------------------------------
+   REVIEWS
+-----------------------------------------*/
+#reviews {
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center center;
+}
+
+#reviews .col-md-4 {
+  margin-bottom: 22px;
+}
+
+#reviews h1, .fa {
+ color: white;
+ padding: 2px;
+}
+#reviews p {
+ color: white;
+ padding: 2px;
+}
+
+
+#reviews .section-btn {
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 
@@ -650,13 +682,16 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 footer {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: black;
+
 }
 
-footer h4 {
-  padding-top: 12px;
+footer h2 {
+  font-weight: bold;
 }
+
 
 footer a {
   color: #757575;
