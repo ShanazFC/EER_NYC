@@ -36,8 +36,8 @@ h1 {
 
 h2 {
   font-size: 30px;
+  font-weight: 500;
   line-height: 40px;
-  margin-top: 0;
 }
 
 h3 {
@@ -47,13 +47,13 @@ h3 {
 }
 
 h4 {
-  color: #505050;
+  color: black;
   font-size: 18px;
   line-height: 28px;
 }
 
 p {
-  color: #757575;
+  color: black;
   font-size: 16px;
   font-weight: 300;
   line-height: 29px;
@@ -415,8 +415,8 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #about {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px; */
+  /* padding-bottom: 100px; */
     background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
     background-color: rgba(255, 255, 255, 0.8);
     background-blend-mode: lighten;
@@ -425,39 +425,61 @@ a:hover, a:active, a:focus {
 
 }
 
-.about-info h3 {
-  font-size: 14px;
-  letter-spacing: 12px;
-  text-transform: uppercase;
-  margin: 0;
-
+.about-box {
+    background-color: #C0C0C0;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 20em;
+    height: 20em;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border: 4px solid #5D6063;
 }
+
+
+
 
 
 /*---------------------------------------
   PROJECT
 -----------------------------------------*/
 
+
 .project-header {
   text-align: center;
 }
 
 .project-item {
-  overflow: hidden;
+  background-color: #C0C0C0;
+  margin-top: 50px;
+  /* overflow: hidden; */
   position: relative;
   margin-bottom: 25px;
   padding: 0;
   vertical-align: middle;
   text-align: center;
+  border: 4px solid #5D6063;
+  width: 40em;
+  height: 62em;
+}
+
+.project-item:hover img {
+  transform: scale(0.99);
 }
 
 .project-item p {
-    color: red;
+    color: black ;
     font-size: 16px;
-    font-weight: 300;
-    line-height: 29px;
+    font-weight: 500;
+    line-height: 20px;
     letter-spacing: 0.5px;
+    margin: 10px;
 }
+
+.project-item ul {
+  margin: 10px;
+}
+
 
 .project-overlay {
   background: rgba(0,0,0,0.5);
@@ -507,6 +529,11 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 #team {
   background-color: red;
+  background: url('../images/gears-bg.jpg') 50% 0 repeat-y fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center center;
 }
 
 #team .item {
@@ -515,15 +542,15 @@ a:hover, a:active, a:focus {
   margin-bottom: 22px;
 }
 
-#team h3,
-#team p {
-  margin: 0;
+#team h1, #team h3, #team p {
+ color: white;
 }
+
 
 .team-item {
   overflow: hidden;
   position: relative;
-  margin-top: 34px;
+  margin-top: 20px;
   margin-bottom: 16px;
 }
 
