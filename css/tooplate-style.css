@@ -21,7 +21,7 @@ html, body {
 }
 
 /*---------------------------------------
-  TYPOGRAPHY              
+  TYPOGRAPHY
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
@@ -30,14 +30,14 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   font-size: 40px;
-  font-weight: 200;
+  font-weight: bold;
   line-height: 50px;
 }
 
 h2 {
   font-size: 30px;
+  font-weight: 500;
   line-height: 40px;
-  margin-top: 0;
 }
 
 h3 {
@@ -47,13 +47,13 @@ h3 {
 }
 
 h4 {
-  color: #505050;
+  color: black;
   font-size: 18px;
   line-height: 28px;
 }
 
 p {
-  color: #757575;
+  color: black;
   font-size: 16px;
   font-weight: 300;
   line-height: 29px;
@@ -62,8 +62,10 @@ p {
 
 
 /*---------------------------------------
-  BUTTONS               
+  BUTTONS
 -----------------------------------------*/
+
+
 
 .section-btn {
   margin: 32px 0 0 0;
@@ -88,7 +90,7 @@ p {
   font-weight: normal;
   letter-spacing: 0.5px;
   padding: 0 25px;
-  background: #4dc47d;
+  background: red;
   border-radius: 1px;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
@@ -139,12 +141,12 @@ p {
 
 .csstransforms3d .section-btn button:hover span::before,
 .csstransforms3d .section-btn button:hover span::before {
-  background: #000000;  
+  background: #000000;
 }
 
 
 /*---------------------------------------
-  GENERAL               
+  GENERAL
 -----------------------------------------*/
 
 html{
@@ -196,6 +198,7 @@ a:hover, a:active, a:focus {
 #about, #project,
 #team, #contact, footer {
   background: #ffffff;
+
 }
 
 #about,
@@ -207,7 +210,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-  PRE LOADER              
+  PRE LOADER
 -----------------------------------------*/
 
 .preloader {
@@ -256,18 +259,22 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-  MENU             
+  MENU
 -----------------------------------------*/
+
+.nav-bar-book {
+  background-color: red;
+}
 
 .custom-navbar {
   margin-bottom: 0;
-  background-color: #4dc47d;
+  background-color: black;
   padding: 20px 0;
 }
 
 .custom-navbar .navbar-brand {
   color: #f9f9f9;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 25px;
 }
 
@@ -328,17 +335,17 @@ a:hover, a:active, a:focus {
 
 @media(min-width:768px) {
   .custom-navbar {
-    background: 0 0; 
+    background: 0 0;
   }
   .custom-navbar.top-nav-collapse {
-    background: #4dc47d;
+    background: black;
     padding: 15px 0;
   }
 }
 
 
 /*---------------------------------------
-  HOME             
+  HOME
 -----------------------------------------*/
 
 #home {
@@ -358,6 +365,18 @@ a:hover, a:active, a:focus {
 #home h1 {
   color: #ffffff;
   font-size: 6em;
+  line-height: 1.2em;
+}
+
+#home h2 {
+  color: #ffffff;
+  font-size: 4em;
+  line-height: 1.2em;
+}
+
+#home h3 {
+  color: #ffffff;
+  font-size: 2em;
   line-height: 1.2em;
 }
 
@@ -392,34 +411,77 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-  ABOUT              
+  ABOUT
 -----------------------------------------*/
 
 #about {
-  padding-top: 200px;
-  padding-bottom: 150px;
+  /* padding-top: 100px; */
+  /* padding-bottom: 100px; */
+    background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center center;
+
 }
 
-.about-info h3 {
-  font-size: 14px;
-  letter-spacing: 12px;
-  text-transform: uppercase;
-  margin: 0;
+.about-box {
+    background-color: #C0C0C0;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 20em;
+    height: 20em;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border: 4px solid #5D6063;
 }
+
+
+
 
 
 /*---------------------------------------
-  PROJECT              
+  PROJECT
 -----------------------------------------*/
 
+
+.project-header {
+  text-align: center;
+}
+
+
+
 .project-item {
-  overflow: hidden;
+  background-color: #C0C0C0;
+  margin-top: 50px;
+  /* overflow: hidden; */
   position: relative;
   margin-bottom: 25px;
   padding: 0;
   vertical-align: middle;
   text-align: center;
+  border: 4px solid #5D6063;
+  width: 40em;
+  height: 62em;
 }
+
+.project-item:hover img {
+  transform: scale(0.99);
+}
+
+.project-item p {
+    color: black ;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 10px;
+}
+
+.project-item ul {
+  margin: 10px;
+}
+
 
 .project-overlay {
   background: rgba(0,0,0,0.5);
@@ -442,8 +504,9 @@ a:hover, a:active, a:focus {
 .project-item img {
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
+
 }
-.project-item:hover img {
+/* .project-item:hover img {
   transform: scale(1.1);
 }
 
@@ -460,12 +523,20 @@ a:hover, a:active, a:focus {
 
 .project-item:hover .project-overlay {
   opacity: 1;
-}
+} */
 
 
 /*---------------------------------------
-   TEAM             
+   TEAM
 -----------------------------------------*/
+#team {
+  background-color: red;
+  background: url('../images/gears-bg.jpg') 50% 0 repeat-y fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center center;
+}
 
 #team .item {
   display: block;
@@ -473,16 +544,18 @@ a:hover, a:active, a:focus {
   margin-bottom: 22px;
 }
 
-#team h3,
-#team p {
-  margin: 0;
+#team h1, #team h3, #team p {
+ color: white;
 }
+
 
 .team-item {
   overflow: hidden;
   position: relative;
-  margin-top: 34px;
+  margin-top: 20px;
   margin-bottom: 16px;
+  background-color: #C0C0C0;
+  border: 4px solid #5D6063;
 }
 
 .team-item img {
@@ -524,9 +597,37 @@ a:hover, a:active, a:focus {
   opacity: 1;
 }
 
+*---------------------------------------
+   REVIEWS
+-----------------------------------------*/
+#reviews {
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center center;
+}
+
+#reviews .col-md-4 {
+  margin-bottom: 22px;
+}
+
+#reviews h1, .fa {
+ color: white;
+ padding: 2px;
+}
+#reviews p {
+ color: white;
+ padding: 2px;
+}
+
+
+#reviews .section-btn {
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
 
 /*---------------------------------------
-  CONTACT             
+  CONTACT
 -----------------------------------------*/
 
 #contact {
@@ -577,17 +678,20 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-  FOOTER              
+  FOOTER
 -----------------------------------------*/
 
 footer {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: black;
+
 }
 
-footer h4 {
-  padding-top: 12px;
+footer h2 {
+  font-weight: bold;
 }
+
 
 footer a {
   color: #757575;
@@ -599,14 +703,14 @@ footer .copyright-text {
 
 
 /*---------------------------------------
-  SOCIAL ICON             
+  SOCIAL ICON
 -----------------------------------------*/
 
 .social-icon {
   position: relative;
   padding: 0;
   margin: 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .social-icon li {
@@ -634,7 +738,7 @@ footer .copyright-text {
 
 
 /*---------------------------------------
-  MOBILE RESPONSIVE              
+  MOBILE RESPONSIVE
 -----------------------------------------*/
 
 @media (max-width: 992px) {
