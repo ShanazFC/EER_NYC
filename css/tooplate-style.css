@@ -610,10 +610,11 @@ a:hover, a:active, a:focus {
   margin-bottom: 22px;
 }
 
-#reviews h1, .fa {
+#reviews h1, #reviews .fa {
  color: white;
  padding: 2px;
 }
+
 #reviews p {
  color: white;
  padding: 2px;
